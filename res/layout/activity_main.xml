@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="#F5F5F5"> <!-- Fondo un poco gris para que resalte la sombra blanca de las cajas -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AgroRiego IoT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:textColor="#333333"/>
+
+    <EditText
+        android:id="@+id/etRut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_caja"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:hint="Ingrese su RUT (ej: 12345678-9)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fondo_caja"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Ingresar"
+        android:textSize="18sp"
+        android:backgroundTint="#007BFF" /> <!-- Botón azul clásico -->
+
+    <TextView
+        android:id="@+id/tvRegistrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="¿No tienes cuenta? Regístrate aquí"
+        android:textColor="#007BFF"
+        android:textStyle="bold"
+        android:padding="8dp"/>
+
+</LinearLayout>

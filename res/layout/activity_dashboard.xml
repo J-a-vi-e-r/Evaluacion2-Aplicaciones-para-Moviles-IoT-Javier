@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Botón de salir con esquinas redondeadas, a la izquierda y con sombra -->
+    <ImageButton
+        android:id="@+id/btnSalir"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/fondo_boton_redondo"
+        android:elevation="4dp"
+        android:src="@android:drawable/ic_menu_revert"
+        android:contentDescription="Cerrar sesión" />
+
+    <!-- Tu diseño original, intacto y centrado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panel del Invernadero"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/tvTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Temperatura: Esperando datos..."
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="@drawable/fondo_caja"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/tvHumedad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Humedad del Suelo: Esperando datos..."
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="@drawable/fondo_caja"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

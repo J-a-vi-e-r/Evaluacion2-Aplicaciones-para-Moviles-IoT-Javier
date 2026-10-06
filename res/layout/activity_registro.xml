@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro - AgroRiego IoT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:textColor="#333333"/>
+
+    <EditText
+        android:id="@+id/etRegRut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_caja"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:hint="Ingrese su RUT"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fondo_caja"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:hint="Crea una contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnRegistrarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Registrarme"
+        android:textSize="18sp"
+        android:backgroundTint="#28A745" /> <!-- Un color verdecito para diferenciar -->
+
+</LinearLayout>
